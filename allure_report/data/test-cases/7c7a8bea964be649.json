@@ -1,0 +1,134 @@
+{
+  "uid" : "7c7a8bea964be649",
+  "name" : "加",
+  "fullName" : "CalcTestCase.CalcCases#calc_add",
+  "historyId" : "109583ae81d344c7cbc108ac0e425b4d",
+  "time" : {
+    "start" : 1607851718625,
+    "stop" : 1607851718625,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "add_data",
+    "time" : {
+      "start" : 1607851718625,
+      "stop" : 1607851718625,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "up_and_down",
+    "time" : {
+      "start" : 1607851718604,
+      "stop" : 1607851718604,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "result_assert",
+    "time" : {
+      "start" : 1607851718625,
+      "stop" : 1607851718625,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "up_and_down::0",
+    "time" : {
+      "start" : 1607851718829,
+      "stop" : 1607851718829,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "Calculator Function"
+  }, {
+    "name" : "story",
+    "value" : "Add Feature Testcase"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('up_and_down')"
+  }, {
+    "name" : "tag",
+    "value" : "add"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "suite",
+    "value" : "CalcTestCase"
+  }, {
+    "name" : "subSuite",
+    "value" : "CalcCases"
+  }, {
+    "name" : "host",
+    "value" : "howard-mac.local"
+  }, {
+    "name" : "thread",
+    "value" : "36143-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "CalcTestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "add_data",
+    "value" : "[100, 300, 400]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "add", "@pytest.mark.usefixtures('up_and_down')", "run(order=1)" ]
+  },
+  "source" : "7c7a8bea964be649.json",
+  "parameterValues" : [ "[100, 300, 400]" ]
+}

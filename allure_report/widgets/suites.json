@@ -1,8 +1,8 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "52185bd67611211c46f7c8b3a96aa0e3",
-    "name" : "test_calc",
+    "uid" : "2b4466f95457e07e9f7d2cb022119b8a",
+    "name" : "CalcTestCase",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

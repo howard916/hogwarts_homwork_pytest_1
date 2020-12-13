@@ -1,0 +1,150 @@
+{
+  "uid" : "562f7736ab0dc798",
+  "name" : "除",
+  "fullName" : "CalcTestCase.CalcCases#calc_div",
+  "historyId" : "27b2f24266476bc7fa064d1496a36d04",
+  "time" : {
+    "start" : 1607851718827,
+    "stop" : 1607851718827,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "result_assert",
+    "time" : {
+      "start" : 1607851718826,
+      "stop" : 1607851718826,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "div_data",
+    "time" : {
+      "start" : 1607851718827,
+      "stop" : 1607851718827,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "up_and_down",
+    "time" : {
+      "start" : 1607851718604,
+      "stop" : 1607851718604,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b1503422ecc8f301",
+      "name" : "stdout",
+      "source" : "b1503422ecc8f301.txt",
+      "type" : "text/plain",
+      "size" : 13
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "up_and_down::0",
+    "time" : {
+      "start" : 1607851718829,
+      "stop" : 1607851718829,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Div Feature Testcase"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Calculator Function"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('up_and_down')"
+  }, {
+    "name" : "tag",
+    "value" : "div"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=4)"
+  }, {
+    "name" : "suite",
+    "value" : "CalcTestCase"
+  }, {
+    "name" : "subSuite",
+    "value" : "CalcCases"
+  }, {
+    "name" : "host",
+    "value" : "howard-mac.local"
+  }, {
+    "name" : "thread",
+    "value" : "36143-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "CalcTestCase"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "div_data",
+    "value" : "[40000, 200, 200]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "div", "run(order=4)", "@pytest.mark.usefixtures('up_and_down')" ]
+  },
+  "source" : "562f7736ab0dc798.json",
+  "parameterValues" : [ "[40000, 200, 200]" ]
+}
