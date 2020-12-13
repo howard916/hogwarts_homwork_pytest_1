@@ -1,44 +1,40 @@
 import pytest
 import allure
-from pythoncode.calculator import Calculator
 
 
+@allure.title("计算器冒烟测试")
+@allure.feature("Calculator Function")
+@pytest.mark.usefixtures("up_and_down")
 class TestCalc:
-    def setup_class(self):
-        self.calc = Calculator()
-        print("开始计算")
 
-    def teardown_class(self):
-        print("结束计算")
+    @allure.story("Add Feature Testcase")
+    @allure.title("加")
+    @allure.severity("critical")
+    @pytest.mark.run(order=1)
+    @pytest.mark.add
+    def test_add(self, result_assert, add_data):
+        assert result_assert("add", add_data)
 
-    @allure.feature("Calculator Add Feature Testcase")
-    @pytest.mark.parametrize("a,b,expect", [
-        (0, 0, 0), (0, 1, 1), (3, 5, 8), (-1, -2, -3), (3.52, 7.6, 11.12), (100, 300, 400)
-    ], ids=["zero", "zero+int", "int", "negative+negative", "float", "bigint"])
-    def test_add(self, a, b, expect):
-        assert expect == self.calc.add(a, b)
+    @allure.story("Sub Feature Testcase")
+    @allure.severity("blocker")
+    @allure.title("减")
+    @pytest.mark.run(order=2)
+    @pytest.mark.sub
+    def test_sub(self, result_assert, sub_data):
+        assert result_assert("sub", sub_data)
 
-    @allure.feature("Calculator Sub Feature Testcase")
-    @pytest.mark.parametrize("a,b,expect", [
-        (0, 0, 0), (0, 1, -1), (5, 3, 2), (3, 5, -2), (-1, 2, -3), (3, -1, 4), (-1, -2, 1), (7.6, 3.52, 4.08),
-        (3000, 1000, 2000)
-    ], ids=["zero", "zero-positive", "positive", "negative", "negative-positive", "positive-negative",
-            "negative-negative", "float", "bigint"])
-    def test_sub(self, a, b, expect):
-        assert expect == self.calc.sub(a, b)
+    @allure.story("Mul Feature Testcase")
+    @allure.title("乘")
+    @allure.severity("normal")
+    @pytest.mark.run(order=3)
+    @pytest.mark.mul
+    def test_mul(self, result_assert, mul_data):
+        assert result_assert("mul", mul_data)
 
-    @allure.feature("Calculator Mul Feature Testcase")
-    @pytest.mark.parametrize("a,b,expect", [
-        (0, 0, 0), (0, 1, 0), (0, -1, 0), (3, 5, 15), (-1, 2, -2), (-1, -2, 2), (7.6, 3.52, 26.752), (100, 300, 30000)
-    ], ids=["zero", "zero*int", "zero*negative", "positive*positive", "negative*positive", "negative*negative", "float",
-            "bigint"])
-    def test_mul(self, a, b, expect):
-        assert expect == self.calc.mul(a, b)
-
-    @allure.feature("Calculator Div Feature Testcase")
-    @pytest.mark.parametrize("a,b,expect", [
-        (0, 0, "Error"), (0, 1, 0), (1, 1, 1), (7, 2, 3.5), (-4, 2, -2), (4, -2, -2), (-4, -2, 2), (40000, 200, 200)
-    ], ids=["zero", "zero/int", "self/self", "float", "negative/positive", "positive/negative", "negative/negative",
-            "bigint"])
-    def test_div(self, a, b, expect):
-        assert expect == self.calc.div(a, b)
+    @allure.story("Div Feature Testcase")
+    @allure.title("除")
+    @allure.severity("normal")
+    @pytest.mark.run(order=4)
+    @pytest.mark.div
+    def test_div(self, result_assert, div_data):
+        assert result_assert("div", div_data)
