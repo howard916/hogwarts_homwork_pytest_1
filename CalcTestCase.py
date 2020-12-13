@@ -2,7 +2,6 @@ import pytest
 import allure
 
 
-@allure.title("计算器冒烟测试")
 @allure.feature("Calculator Function")
 @pytest.mark.usefixtures("up_and_down")
 class CalcCases:
